@@ -34,7 +34,7 @@ export default {
   computed: {
     ...mapGetters(["valorTotal"]),
     produtos() {
-      return this.$store.state.produtos;
+      return this.$store.state.carrinho.produtos;
     },
   },
 };
