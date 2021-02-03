@@ -1,4 +1,5 @@
 # vuex-exercicios
+http://jpierry-vuex.surge.sh/
 
 ## Project setup
 ```
