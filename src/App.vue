@@ -58,4 +58,43 @@ button {
   outline: none;
   border: none;
 }
+
+input {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .linha {
+    display: block;
+  }
+
+  strong,
+  span {
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+
+  .loja {
+    display: block;
+  }
+
+  .loja input {
+    width: 15%;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .carrinho {
+    font-size: 1rem;
+  }
+}
 </style>
