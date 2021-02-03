@@ -19,23 +19,23 @@
       </table>
       <hr />
       <div class="total">
-        <span
-          >Total: <strong>{{ total | dinheiro }}</strong></span
-        >
+        <span>
+          Total: <strong>{{ valorTotal | dinheiro }}</strong>
+        </span>
       </div>
     </div>
   </Painel>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
+
 export default {
   computed: {
-    total() {
-      return this.$store.getters.valorTotal;
-    },
+    ...mapGetters(["valorTotal"]),
     produtos() {
-      return this.$store.state.produtos
-    }
+      return this.$store.state.produtos;
+    },
   },
 };
 </script>
