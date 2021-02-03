@@ -32,7 +32,7 @@ import { mapGetters } from "vuex";
 
 export default {
   computed: {
-    ...mapGetters(["valorTotal"]),
+    ...mapGetters("carrinho", ["valorTotal"]),
     produtos() {
       return this.$store.state.carrinho.produtos;
     },
