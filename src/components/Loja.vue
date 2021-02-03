@@ -40,6 +40,8 @@ export default {
       this.sequencia++;
 
       this.adicionarProduto(produto);
+
+      alert('Global getter: ' + this.$store.getters.getNomeCompleto)
     },
   },
 };
